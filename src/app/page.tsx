@@ -27,7 +27,7 @@ export default function Home() {
       <div className="max-w-xl w-full">
         {!gameStarted ? (
           <section className="flex flex-col items-center justify-center h-[calc(100vh-2rem)]">
-            <h1 className="mb-2 font-semibold wrap-break-word text-base sm:text-4xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-600 inline-block text-transparent bg-clip-text">
+            <h1 className="mb-2 font-semibold wrap-break-word text-4xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-600 inline-block text-transparent bg-clip-text">
               AI Anime Story
             </h1>
             <Button
@@ -50,12 +50,14 @@ export default function Home() {
               <ConversationScrollButton />
             </Conversation>
 
-            <GameInput
-              input={input}
-              onInputChange={handleInputChange}
-              onSubmit={handleSubmit}
-              isLoading={isLoading}
-            />
+            <div className="fixed bottom-5 left-0 right-0 px-3">
+              <GameInput
+                input={input}
+                onInputChange={handleInputChange}
+                onSubmit={handleSubmit}
+                isLoading={isLoading}
+              />
+            </div>
           </>
         )}
       </div>
