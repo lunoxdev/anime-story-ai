@@ -15,7 +15,7 @@ export const UI_MESSAGES = {
 
 export const GAME_CONFIG = {
   IMAGE: {
-    DEFAULT_PROMPT: "Futuristic cyberpunk anime city, neon lights in anime art",
+    DEFAULT_PROMPT: "Fantasy anime world, spiritual energy, traditional architecture in anime art similar to Demon Slayer or Solo Leveling",
     SEPARATOR: "IMAGE: ",
   },
 };
