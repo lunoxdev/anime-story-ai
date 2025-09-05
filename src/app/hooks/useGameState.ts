@@ -3,9 +3,9 @@ import type { GameMessage, GenerateStoryResponse } from "@/lib/types";
 
 export function useGameState() {
   const [messages, setMessages] = useState<GameMessage[]>([]);
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false);
+  const [input, setInput] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [gameStarted, setGameStarted] = useState<boolean>(false);
 
   const generateImage = useCallback(
     async (messageId: string, imagePrompt: string) => {
