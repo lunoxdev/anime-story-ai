@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Anime story with AI",
+  title: "AI Anime Story",
   description:
     "Step into a neon anime world where every choice shapes your fate. Explore futuristic streets, encounter mysterious characters, and craft your own interactive cyberpunk story.",
 };
