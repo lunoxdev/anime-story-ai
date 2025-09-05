@@ -23,8 +23,8 @@ export default function Home() {
   } = useGameState();
 
   return (
-    <main className="flex items-center justify-center w-full min-h-screen p-4">
-      <div className="max-w-xl w-full">
+    <main className="flex items-center justify-center w-full h-screen p-4 pb-24 overflow-hidden">
+      <div className="max-w-xl w-full h-full flex flex-col">
         {!gameStarted ? (
           <section className="flex flex-col items-center justify-center h-[calc(100vh-2rem)]">
             <h1 className="mb-2 font-semibold wrap-break-word text-4xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-600 inline-block text-transparent bg-clip-text">
@@ -50,7 +50,7 @@ export default function Home() {
               <ConversationScrollButton />
             </Conversation>
 
-            <div className="fixed bottom-5 left-0 right-0 px-3">
+            <div className="fixed bottom-5 left-0 right-0 px-3 bg-background">
               <GameInput
                 input={input}
                 onInputChange={handleInputChange}

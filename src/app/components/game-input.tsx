@@ -29,7 +29,7 @@ export function GameInput({
         onChange={onInputChange}
         disabled={isLoading}
       />
-      <PromptInputSubmit disabled={inputSubmitIsDisabled} />
+      <PromptInputSubmit disabled={inputSubmitIsDisabled} className="cursor-pointer" />
     </PromptInput>
   );
 }
